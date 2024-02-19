@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Описание страницы">
+  <meta name="keywords" content="Ключевые слова страницы">
+  <title>Главная страница</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header" id="header">
+      <div class="header__wrapper">
+        <button class="header__burger" type="button" aria-label="Открыть меню" data-burger>Меню</button>
+        <a class="header__logo logo" href="#">
+          <img src="./img/logo.svg" width="100" height="25" alt="Логотип">
+        </a>
+        <div class="header__search search">
+          <form action="#" method="get">
+            <div class="search__icon">
+              <svg width="17" height="20">
+                <use xlink:href="img/sprite.svg#location"></use>
+              </svg>
+            </div>
+            <input type="search" placeholder="Введите адрес доставки" aria-label="Поиск">
+            <button type="submit">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+          <ul>
+            <li>Москва, Часовая улица, 11/3с1</li>
+            <li>Москва, Часовая улица, 11/3</li>
+          </ul>
+        </div>
+        <a class="header__call call" href="tel:+79175105759">
+          <div class="call__icon">
+            <svg width="14" height="14">
+              <use xlink:href="img/sprite.svg#calling"></use>
+            </svg>
+          </div>
+          <span class="call__text">Контакты:</span>
+          <strong class="call__phone">+7 (917) 510-57-59</strong>
+        </a>
+        <a class="header__button btn btn--cart" href="#">
+          <span class="btn__text">Корзина</span>
+          <span class="btn__number">4</span>
+          <div class="btn__icon">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#buy"></use>
+            </svg>
+          </div>
+        </a>
+        <ul class="header__nav nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">О ресторане</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Условия доставки</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Возврат товара</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Акции</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__wrapper">
+          <div class="hero__text">
+            <h1 class="hero__title">Доставка вкуснейших блюд за 60 минут</h1>
+            <p class="hero__caption">Ещё не пробовал?</p>
+          </div>
+        </div>
+      </section>
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="#cold">Холодные закуски</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#hot">Горячие закуски</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#meat">Мясные блюда</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#soup">Супы</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#fish">Рыбные блюда</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#gril">Гриль меню</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#signature">Фирменные блюда</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#drink">Напитки</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <section class="menu__wrapper" id="cold">
+          <h2 class="menu__title">Холодные закуски</h2>
+          <div class="menu__item card"></div>
+        </section>
+        <section class="menu__wrapper" id="hot">
+          <h2 class="menu__title">Горячие закуски</h2>
+          <div class="menu__item card"></div>
+        </section>
+        <section class="menu__wrapper" id="meat">
+          <h2 class="menu__title">Мясные блюда</h2>
+          <div class="menu__item card"></div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="footer__top" href="#header">
+          <svg width="20" height="12">
+            <use xlink:href="img/sprite.svg#arrow-top"></use>
+          </svg>
+        </a>
+        <div class="footer__container">
+          <a class="footer__logo logo" href="#">
+            <img src="./img/logo.svg" width="100" height="25" alt="Логотип">
+          </a>
+          <p class="footer__copyright">© ООО СК «АПШЕРОН» Все права защищены. 2010-2020</p>
+          <a class="footer__link" href="#">Пользовательское соглашение</a>
+          <a class="footer__link" href="#">Карта сайта</a>
+          <a class="footer__link" href="#">Политика конфиденциальности</a>
+        </div>
+        <ul class="footer__nav nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">О ресторане</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Условия доставки</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Возврат товара</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Акции</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
