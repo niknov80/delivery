@@ -1,0 +1,102 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+
+  color: $color-default-white;
+
+  background: $color-button-bg;
+  border-radius: $button-radius-default;
+  border: none;
+  cursor: pointer;
+
+  transition: all $trans-default;
+
+  &:hover {
+    background: $color-button-bg-dark;
+  }
+
+  &:focus {
+    background: $color-button-bg-dark;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.btn--cart {
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  @include mobile {
+    flex-direction: column-reverse;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    justify-self: end;
+  }
+}
+
+.btn__text {
+  @include text-gilroy-14-17-600;
+
+  padding-left: 24px;
+  padding-right: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    background-color: $button-color-divider;
+    height: 38px;
+    width: 1px;
+
+    @include mobile {
+      width: 100%;
+      height: 1px;
+      top: 0;
+    }
+  }
+
+  @include mobile {
+    @include text-gilroy-12-14-600;
+
+    text-transform: lowercase;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.btn__number {
+  @include text-gilroy-12-14-600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $color-button-border;
+  color: $button-color-text-secondary;
+  margin-left: 12px;
+  margin-right: 12px;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.btn__icon {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}

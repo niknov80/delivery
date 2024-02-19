@@ -1,0 +1,39 @@
+.call {
+  grid-template-columns: 32px 1fr;
+  column-gap: 10px;
+
+  &:hover {
+    & .call__icon {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.call__icon {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $icon-bg;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  transition: opacity $trans-default;
+}
+
+.call__text {
+  @include text-gilroy-12-22-400;
+
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  color: $color-text-search;
+}
+
+.call__phone {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}

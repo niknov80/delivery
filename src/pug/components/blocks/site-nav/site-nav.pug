@@ -1,0 +1,7 @@
+include ./site-nav-data.pug
+
+nav.site-nav
+  ul.site-nav__list
+    each item in menu_data
+      li.site-nav__item
+        a.site-nav__link(class= item.active ? "site-nav__link--active": false, href=item.link)= item.name

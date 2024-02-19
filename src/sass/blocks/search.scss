@@ -1,0 +1,89 @@
+.search {
+  position: relative;
+  width: 100%;
+
+  &:focus-within .search__icon {
+    color: $icon-color-tertiary;
+  }
+
+  &:focus-within ul {
+    display: flex;
+  }
+}
+
+.search form {
+  position: relative;
+}
+
+.search input {
+  @include text-gilroy-18-21-400;
+
+  display: block;
+  width: 100%;
+  color: $color-text-base;
+  padding: 15px 45px 16px;
+  border-radius: $form-input-radius;
+  background-color: $form-input-bg;
+  border: none;
+
+  &::placeholder {
+    color: $color-text-search;
+  }
+
+  @include focus {
+    outline: none;
+  }
+
+  @include mobile {
+    @include text-gilroy-14-16-400;
+  }
+}
+
+.search ul {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: $form-input-bg;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  z-index: 10;
+  top: 45px;
+  border-top: 1px solid $form-color-border;
+  padding-top: 13px;
+  padding-bottom: 20px;
+  gap: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.search li {
+  @include text-gilroy-18-21-400;
+
+  list-style-type: none;
+}
+
+.search button {
+  position: absolute;
+  top: 54%;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  color: $color-icon-primary;
+  cursor: pointer;
+}
+
+.search__icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: $icon-color-secondary;
+}

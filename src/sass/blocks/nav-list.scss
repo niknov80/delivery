@@ -1,0 +1,45 @@
+.nav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.nav-list__item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 0;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.nav-list__link {
+  @include text-gilroy-20-24-500;
+
+  transition: opacity $trans-default;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @include tablet {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    text-align: center;
+  }
+}

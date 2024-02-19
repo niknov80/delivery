@@ -1,0 +1,116 @@
+// Colors
+$white: #ffffff;
+$white-30: rgba(255, 255, 255, 0.3);
+$white-20: rgba(255, 255, 255, 0.2);
+$white-10: rgba(255, 255, 255, 0.1);
+$black: #000000;
+$transparent: rgba(255, 255, 255, 0);
+$red: #ff121f;
+$brown: #403c3b;
+$gray-light: #cfcfcf;
+$liver: #504b4a;
+$green: #68956f;
+$green-secondary: #618967;
+$green-tertiary-30: rgba(114, 164, 121, 0.3);
+
+// Gradients
+$gradient-green: linear-gradient(132.71deg, rgb(97, 137, 103) 4.92%, rgb(114, 164, 121) 95.34%);
+$gradient-green-dark: linear-gradient(132.71deg, rgb(69, 96, 72) 4.92%, rgb(89, 128, 95) 95.34%);
+$gradient-dark: linear-gradient(-56.18deg, rgb(68, 64, 63) 0.4%, rgb(33, 31, 32) 100%);
+$gradient-scroll: linear-gradient(270deg, rgb(64, 60, 59), rgb(64, 60, 59) 50%, rgba(70, 66, 65, 0) 100%);
+
+// Radius
+$radius-default: 10px;
+// ---------------------------------
+
+// Default
+
+$color-default-white: $white;
+$color-default-black: $black;
+$color-transparent: $transparent;
+
+// Text
+
+$color-text-base: $white;
+$color-text-search: $gray-light;
+$color-text-secondary: $gray-light;
+$color-text-underline: $white-20;
+$color-text-tertiary: $brown;
+
+// Button
+
+$color-button-border: $white;
+$color-button-bg: $gradient-green;
+$color-button-bg-dark: $gradient-green-dark;
+$color-button-bg-secondary: $white;
+$button-radius-default: $radius-default;
+$button-color-text-secondary: $brown;
+$button-color-divider: $white-30;
+
+// Background
+$color-bg-primary: $brown;
+$bg-green: $green-secondary;
+$color-footer-bg: $gradient-dark;
+$color-section-divider: $white-10;
+
+// Icon
+$color-icon-primary: $white;
+$icon-color-secondary: $gray-light;
+$icon-color-tertiary: $green;
+$icon-bg: $gradient-green;
+
+// Form
+$color-form-primary: $white;
+$color-form-error: $red;
+$color-input-border: $black;
+$form-input-radius: $radius-default;
+$form-input-bg: $liver;
+$form-color-border: $white-10;
+
+
+// Shadow
+$shadow-green: 0 5px 12px 0 $green-tertiary-30;
+
+// Typography
+// ---------------------------------
+
+// переменная используемая в html для подключения скейлинга
+$fz-default:                        16px;
+$lh-default:                        20px;
+
+// у некоторых шрифтов в ios возникают проблемы с символом рубля
+// https://www.artlebedev.ru/kovodstvo/sections/159/#13
+$ff-rouble:                         "Rouble", "Arial", sans-serif;
+$ff-gilroy:                         "Gilroy", "Arial", sans-serif;
+$ff-zingrust:                       "Zing-Rust", "Arial", sans-serif;
+$ff-greenwich:                      "Greenwich", "Arial", sans-serif;
+$ff-proxima:                        "Proxima-Nova", "Arial", sans-serif;
+
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+$trans-600:                         0.6s $tf-default;
+
+// Viewports
+// ---------------------------------
+
+
+$vp-375:                            375px;
+$vp-768:                            768px;
+$vp-960:                            960px;
+$vp-1024:                           1024px;
+$vp-1440:                           1440px;
+$vp-1920:                           1920px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

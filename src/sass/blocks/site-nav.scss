@@ -1,0 +1,74 @@
+.site-nav {
+  padding-left: 80px;
+  padding-right: 80px;
+  background: $color-bg-primary;
+  border-bottom: 1px solid $color-section-divider;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+
+  &--scroll {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background: $gradient-scroll;
+    }
+  }
+}
+
+.site-nav__list {
+  position: relative;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  column-gap: 45px;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: 1410px;
+}
+
+.site-nav__item {
+  display: flex;
+  list-style-type: none;
+}
+
+
+.site-nav__link {
+  @include text-gilroy-18-21-400;
+
+  color: $color-text-secondary;
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  transition: all $trans-default;
+
+  &:hover {
+    color: $color-text-base;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: $bg-green;
+    box-shadow: $shadow-green;
+    transition: width $trans-default;
+  }
+}
+
+.site-nav__link--active {
+  color: $color-text-base;
+
+  &::after {
+    width: 100%;
+  }
+}

@@ -1,0 +1,38 @@
+header#header.header
+  .header__wrapper
+    button.header__burger(type="button" aria-label="Открыть меню" data-burger) Меню
+    a.header__logo.logo(href="#")
+      img(src="./img/logo.svg" width="100" height="25" alt="Логотип")
+    .header__search.search
+      form(action="#" method="get")
+        .search__icon
+          svg(width="17", height="20")
+            use(xlink:href="img/sprite.svg#location")
+        input(type="search" placeholder="Введите адрес доставки" aria-label="Поиск")
+        button(type="submit")
+          svg(width="20", height="20")
+            use(xlink:href="img/sprite.svg#search")
+      ul
+        li Москва, Часовая улица, 11/3с1
+        li Москва, Часовая улица, 11/3
+    a.header__call.call(href="tel:+79175105759")
+      .call__icon
+        svg(width="14", height="14")
+          use(xlink:href="img/sprite.svg#calling")
+      span.call__text Контакты:
+      strong.call__phone +7 (917) 510-57-59
+    a.header__button.btn.btn--cart(href="#")
+      span.btn__text Корзина
+      span.btn__number 4
+      .btn__icon
+        svg(width="20", height="20")
+          use(xlink:href="img/sprite.svg#buy")
+    ul.header__nav.nav-list
+      li.nav-list__item
+        a.nav-list__link(href="#") О ресторане
+      li.nav-list__item
+        a.nav-list__link(href="#") Условия доставки
+      li.nav-list__item
+        a.nav-list__link(href="#") Возврат товара
+      li.nav-list__item
+        a.nav-list__link(href="#") Акции
